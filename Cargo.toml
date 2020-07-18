@@ -1,0 +1,11 @@
+[package]
+name = "tide-mongodb-dal"
+version = "0.1.0"
+authors = ["Anton Whalley <anton@venshare.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mongodb = { git = "https://github.com/saghm/mongo-rust-driver", branch = "RUST-452", features = ["async-std-runtime"], version = "1.0.0", default-features = false } 
+async-std = { version = "1.6.0" }
